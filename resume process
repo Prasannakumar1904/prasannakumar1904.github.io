@@ -1,0 +1,21 @@
+document.getElementById("downloadResume").addEventListener("click", function () {
+
+    const allow = confirm(
+        "Do you want to download Prasanna Kumar's Resume?"
+    );
+
+    if (allow) {
+
+        const link = document.createElement("a");
+        link.href = "assets/resume/Prasanna_Kumar_Resume.pdf";
+        link.download = "Prasanna_Kumar_Resume.pdf";
+
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+
+    } else {
+        alert("Download cancelled.");
+    }
+
+});
