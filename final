@@ -1,0 +1,19 @@
+document.getElementById("downloadResume").addEventListener("click", function () {
+
+    const choice = confirm(
+        "Press OK to download the resume.\n\nPress Cancel to view it online."
+    );
+
+    if (choice) {
+        const link = document.createElement("a");
+        link.href = "assets/resume/Prasanna_Kumar_Resume.pdf";
+        link.download = "Prasanna_Kumar_Resume.pdf";
+        link.click();
+    } else {
+        window.open(
+            "assets/resume/Prasanna_Kumar_Resume.pdf",
+            "_blank"
+        );
+    }
+
+});
