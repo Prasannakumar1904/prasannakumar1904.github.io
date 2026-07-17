@@ -1,0 +1,5 @@
+<div class="resume-section">
+    <button id="downloadResume" class="resume-btn">
+        <i class="fas fa-download"></i> Download Resume
+    </button>
+</div>
